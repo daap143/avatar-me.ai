@@ -44,8 +44,8 @@ def down_dep():
 import run
 import brows
 
-print("upload the file as image.jpg")
+source = input("enter the image path")
 query = input("enter a the prompt:")
 brows.search_img(query)
 
-run(source_path='image.jpg',target_path='temp.jpg',output_path='generated.jpg')
+run(source_path=source ,target_path='temp.jpg',output_path='generated.jpg')
